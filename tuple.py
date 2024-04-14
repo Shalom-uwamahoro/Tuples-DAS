@@ -4,12 +4,15 @@ print(my_tuple[0:3])
 
 print(my_tuple[-6:-2])
 
-my_tuple += (10,)
-print(my_tuple)
+tuple_to_list = list(my_tuple)
+print(tuple_to_list)
 
+tuple_to_list.insert(3, 10)
+tuple_to_list.remove(25)
+print(tuple_to_list)
 
-remove_item = 25
-my_tuple = tuple(item for item in my_tuple if item != remove_item )
+my_tuple = tuple(tuple_to_list)
 print(my_tuple)
 
 print(len(my_tuple))
+
