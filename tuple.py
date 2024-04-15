@@ -16,3 +16,12 @@ print(my_tuple)
 
 print(len(my_tuple))
 
+new_items = (4,5,6)
+
+final_tuple = my_tuple + new_items
+print(final_tuple)
+print(len(final_tuple))
+
+del(my_tuple)
+print(my_tuple)
+
